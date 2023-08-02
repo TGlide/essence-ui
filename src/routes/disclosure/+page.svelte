@@ -11,4 +11,23 @@
 			pariatur, sunt error molestiae dolore eaque?
 		</Content>
 	</Disclosure>
+
+	<Disclosure let:Content let:Trigger class="max-w-md w-full h-96">
+		<Trigger>
+			<button
+				class="bg-neutral-900 w-full text-left px-2 py-1"
+				slot="asChild"
+				let:builder
+				{...builder}
+				use:builder.action
+			>
+				As child
+			</button>
+		</Trigger>
+		<Content>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut officiis fugiat dicta itaque
+			distinctio odit veniam qui, molestias, reprehenderit minus voluptas consequuntur aliquid
+			pariatur, sunt error molestiae dolore eaque?
+		</Content>
+	</Disclosure>
 </main>

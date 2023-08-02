@@ -4,14 +4,14 @@
 	import { cubicInOut } from 'svelte/easing';
 	import { ctx } from '.';
 
+	let className: string | undefined | null = undefined;
+	export { className as class };
+
 	const {
 		unstyled,
 		states: { open },
 		elements: { content }
 	} = ctx.get();
-
-	let className: string | undefined | null = undefined;
-	export { className as class };
 </script>
 
 {#if $open}
