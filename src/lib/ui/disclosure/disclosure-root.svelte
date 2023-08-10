@@ -36,10 +36,8 @@
 	} = disclosure;
 </script>
 
-{#if !$$slots.asChild}
+<slot name="asChild" {Trigger} {Content} open={$openStore} builder={$root}>
 	<div class={cn('group', className)} use:root {...$root}>
 		<slot {Trigger} {Content} open={$openStore} />
 	</div>
-{:else}
-	<slot name="asChild" {Trigger} {Content} open={$openStore} builder={$root} />
-{/if}
+</slot>
